@@ -1,1 +1,3 @@
-工厂方法模式-Factory Method Pattern
+工厂方法模式-Factory Method Pattern  
+练习
+使用工厂方法模式设计一个可以创建不同几何形状（如圆形、方形和三角形等）的绘图工具，每个几何图形都具有绘制draw()和擦除erase()两个方法
