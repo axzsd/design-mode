@@ -18,5 +18,6 @@ public class Main {
         proxy = (UserDao) userDaoProxy.getProxy();
 
         System.out.println(proxy.findUserById("123"));
+        System.out.println(proxy.findUserById("123"));
     }
 }

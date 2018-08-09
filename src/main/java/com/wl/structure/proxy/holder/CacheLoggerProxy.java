@@ -30,7 +30,7 @@ public class CacheLoggerProxy implements InvocationHandler {
             cache = method.invoke(target, args);
             putCache(cache, args);
         }
-        logger(args);
+        // logger(args);
         return cache;
     }
 
@@ -42,7 +42,7 @@ public class CacheLoggerProxy implements InvocationHandler {
         for (Object obj : args) {
             stringBuilder.append(obj.toString());
         }
-        if (stringBuilder.toString() == null || stringBuilder.toString().length() == 0)
+        if (stringBuilder.toString().length() == 0)
             return null;
         return concurrentHashMap.get(stringBuilder.toString());
     }
@@ -54,7 +54,7 @@ public class CacheLoggerProxy implements InvocationHandler {
         for (Object obj : args) {
             stringBuilder.append(obj.toString());
         }
-        if (stringBuilder.toString() == null || stringBuilder.toString().length() == 0)
+        if (stringBuilder.toString().length() == 0)
             return;
         concurrentHashMap.put(stringBuilder.toString(), value);
     }

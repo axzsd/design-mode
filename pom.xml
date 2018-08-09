@@ -9,4 +9,20 @@
     <version>1.0-SNAPSHOT</version>
     <description>根据刘伟(Sunny)博客：https://blog.csdn.net/lovelion/article/details/17517213 练习设计模式</description>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <compilerVersion>1.8</compilerVersion>
+                    <target>1.8</target>
+                    <source>1.8</source>
+                    <encoding>UTF-8</encoding>
+                    <proc>none</proc>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
